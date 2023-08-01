@@ -1,3 +1,4 @@
+import 'package:common/common.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -57,6 +58,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  final Greeting greeting = Greeting();
+
   void _incrementCounter() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
@@ -106,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // ignore: prefer_const_constructors
-            Text("hello"),
+            Text(greeting.hello("JP")),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,

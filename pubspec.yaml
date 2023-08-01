@@ -32,6 +32,11 @@ dependencies:
     sdk: flutter
 
   # modular
+  common:
+    git:
+      url: https://github.com/jejemo/greeting.git
+      ref: main
+      path: common
 
 
   # The following adds the Cupertino Icons font to your application.
